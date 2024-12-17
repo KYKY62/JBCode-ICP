@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "kycode_backend": {
+      "main": "src/kycode_backend/main.mo",
+      "type": "motoko"
+    },
+    "kycode_frontend": {
+      "dependencies": [
+        "kycode_backend"
+      ],
+      "source": [
+        "src/kycode_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "kycode_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
